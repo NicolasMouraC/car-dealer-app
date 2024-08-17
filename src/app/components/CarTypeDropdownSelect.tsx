@@ -18,8 +18,8 @@ const CarTypeDropdownSelect: React.FC<CarTypeDropdownSelectProps> = ({
           {placeholder}
         </option>
         {options.map((option) => (
-          <option key={option.VehicleTypeId} value={option.VehicleTypeId}>
-            {option.VehicleTypeName}
+          <option key={option.MakeId} value={option.MakeId}>
+            {option.MakeName}
           </option>
         ))}
       </select>

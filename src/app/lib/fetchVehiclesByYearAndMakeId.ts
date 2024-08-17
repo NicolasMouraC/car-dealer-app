@@ -1,9 +1,9 @@
 export async function fetchVehiclesByYearAndMakeId(
-  makeId: number,
-  modelyear: number,
+  makeId: string,
+  modelyear: string
 ) {
   const response = await fetch(
-    `https://vpic.nhtsa.dot.gov/api/vehicles/GetModelsForMakeIdYear/makeId/${makeId}/modelyear/${modelyear}?format=json`,
+    `https://vpic.nhtsa.dot.gov/api/vehicles/GetModelsForMakeIdYear/makeId/${makeId}/modelyear/${modelyear}?format=json`
   );
 
   if (!response.ok) {
